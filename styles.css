@@ -3,7 +3,7 @@
   --text: #f8fffb;
   --muted: rgba(255,255,255,0.72);
 
-  --gold: #d4af37;
+  --accent: #7dd3fc;
   --green: #00c853;
   --green-soft: #5efc82;
 
@@ -190,10 +190,10 @@ a {
 
 .star.large {
   background:
-    rgba(255,220,150,0.96);
+    rgba(200,240,255,0.96);
 
   box-shadow:
-    0 0 12px rgba(255,210,120,0.9),
+    0 0 12px rgba(125,211,252,0.9),
     0 0 30px rgba(94,252,130,0.35);
 }
 
@@ -452,8 +452,8 @@ main {
   background:
     radial-gradient(
       circle,
-      rgba(0,200,83,0.18),
-      rgba(255,208,120,0.08) 30%,
+      rgba(0,200,83,0.16),
+      rgba(125,211,252,0.08) 40%,
       transparent 70%
     );
 
@@ -470,7 +470,7 @@ main {
 .eyebrow {
   margin-bottom: 10px;
 
-  color: var(--gold);
+ color: #7dd3fc;
 
   font-size: 0.92rem;
   font-weight: 700;
@@ -540,19 +540,13 @@ h1 {
 }
 
 .button.primary {
-  color: #080312;
-
   background:
     linear-gradient(
       135deg,
-      #d4af37 0%,
-      #00c853 58%,
-      #b7ffcf 100%
+      #00c853 0%,
+      #34d399 40%,
+      #7dd3fc 100%
     );
-
-  box-shadow:
-    0 0 30px rgba(255,210,120,0.16),
-    0 0 40px rgba(0,200,83,0.18);
 }
 
 .button.secondary {
@@ -642,13 +636,13 @@ h1 {
   background:
     linear-gradient(
       90deg,
-      rgba(255,210,120,0.9),
+      rgba(125,211,252,0.8),
       transparent
     );
 }
 
 .category-title {
-  color: var(--gold);
+  color: #7dd3fc;
 
   font-size: 1rem;
   font-weight: 700;
@@ -734,7 +728,7 @@ h1 {
   background:
     radial-gradient(
       circle at top right,
-      rgba(212,175,55,0.08),
+      rgba(125,211,252,0.08),
       transparent 35%
     ),
 
@@ -753,7 +747,7 @@ h1 {
   margin-bottom: 18px;
 
   color:
-    rgba(255,210,120,0.9);
+    rgba(125,211,252,0.9);
 
   font-size: 0.78rem;
   font-weight: 700;
@@ -1037,7 +1031,7 @@ h1 {
   background:
     linear-gradient(
       90deg,
-      #d4af37,
+      #7dd3fc,
       #00c853
     );
 
@@ -1092,8 +1086,8 @@ h1 {
   background:
     linear-gradient(
       180deg,
-      rgba(22,12,40,0.88),
-      rgba(8,4,18,0.94)
+      rgba(6,18,24,0.88),
+      rgba(3,8,12,0.94)
     );
 
   border:
