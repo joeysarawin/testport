@@ -933,18 +933,19 @@ padding: 42px;
   border-radius: 50%;
 
   border:
-    2px solid rgba(230,190,255,0.92);
+    2px solid rgba(94,252,130,0.92);
 
   background:
     radial-gradient(
       circle,
       rgba(255,255,255,0.35) 0%,
-      rgba(94,252,130,0.14) 60%,
+      rgba(94,252,130,0.18) 60%,
       transparent 100%
     );
 
   box-shadow:
-    0 0 14px rgba(94,252,130,0.72),
+    0 0 14px rgba(94,252,130,0.8),
+    0 0 30px rgba(0,200,83,0.4),
     inset 0 0 10px rgba(255,255,255,0.22);
 }
 
