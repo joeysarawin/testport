@@ -472,7 +472,7 @@ main {
 }
 
 .hero-copy {
-  max-width: 980px;
+  max-width: 780px;
 }
 
 .eyebrow {
@@ -1014,7 +1014,7 @@ padding: 42px;
     );
 
   box-shadow:
-    0 0 12px rgba(192,132,252,0.55);
+    0 0 12px rgba(94,252,130,0.55);
 }
 
 /* Contact section */
@@ -1166,6 +1166,21 @@ padding: 42px;
 
   animation:
     sparkBurst 700ms ease-out forwards;
+}
+
+/* experince card hover */
+
+.experience-card {
+  transition:
+    transform 250ms ease,
+    border-color 250ms ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+
+  border-color:
+    rgba(94,252,130,0.25);
 }
 
 /* Spark animation */
