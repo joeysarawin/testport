@@ -1,4 +1,4 @@
-:root {
+  :root {
   --void: #030005;
   --text: #f7f1ff;
   --muted: rgba(255,255,255,0.72);
@@ -70,16 +70,16 @@ a {
 
     radial-gradient(
       circle at 68% 30%,
-      rgba(163, 89, 255, 0.22),
+      rgba(0, 200, 83, 0.18),
       transparent 26%
     ),
 
     radial-gradient(
       circle at 14% 82%,
-      rgba(126, 52, 255, 0.18),
+      rgba(94, 252, 130, 0.14),
       transparent 22%
     ),
-
+  
     linear-gradient(
       180deg,
       #010003 0%,
@@ -108,19 +108,19 @@ a {
 
     radial-gradient(
       circle at 70% 28%,
-      rgba(174, 92, 255, 0.34),
+      rgba(0, 200, 83, 0.28),
       transparent 18%
     ),
 
     radial-gradient(
       circle at 82% 46%,
-      rgba(150, 70, 255, 0.24),
+      rgba(94, 252, 130, 0.18),
       transparent 16%
     ),
 
     radial-gradient(
       circle at 10% 88%,
-      rgba(132, 52, 255, 0.20),
+      rgba(0, 200, 83, 0.16),
       transparent 18%
     );
 
