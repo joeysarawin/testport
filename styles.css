@@ -564,8 +564,14 @@ h1 {
 }
 
 .button.secondary {
-  color:
-    rgba(94,252,130,0.9);
+  color: #5efc82;
+
+  border: 1px solid rgba(94,252,130,0.4);
+
+  background: rgba(0,200,83,0.08);
+
+  box-shadow:
+    0 0 20px rgba(0,200,83,0.15);
 }
 
 /* Experience section */
