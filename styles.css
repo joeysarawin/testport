@@ -1082,15 +1082,19 @@ h1 {
 
 .contact-grid {
 
-    display: grid;
+    display:grid;
 
-    grid-template-columns: repeat(5, minmax(280px,1fr));
+    grid-template-columns:repeat(5,1fr);
 
-    gap: 28px;
+    gap:22px;
 
-    margin-top: 48px;
+    width:100%;
 
+    justify-items:stretch;
+
+    align-items:stretch;
 }
+
 .contact-card {
 
     position: relative;
@@ -1105,9 +1109,9 @@ h1 {
 
     text-align: center;
 
-    min-height: 420px;
+    min-height: 320px;
 
-    padding: 55px 50px;
+    padding: 40px 24px;
 
     border-radius: 28px;
 
@@ -1177,15 +1181,15 @@ h1 {
 
 .contact-icon {
 
-    width: 110px;
-    height: 110px;
+    width: 82px;
+    height: 82px;
 
     display: flex;
 
     align-items: center;
     justify-content: center;
 
-    margin-bottom: 38px;
+    margin-bottom: 24px;
 
     border-radius: 50%;
 
@@ -1202,31 +1206,39 @@ h1 {
 
     margin: 0;
 
-    font-size: 1.4rem;
+    font-size: 1.12rem;
 
     line-height: 1.35;
 
-    font-weight: 700;
+    font-weight: 600;
 
-    overflow-wrap: anywhere;
+    word-break: normal;
 
+    overflow-wrap: normal;
 }
 .contact-card .card-label {
 
-    font-size: .9rem;
+    font-size: .78rem;
 
-    letter-spacing: .22em;
+    letter-spacing: .20em;
 
-    margin-bottom: 18px;
+    margin-bottom: 14px;
 
 }
 
 @media (max-width:1400px){
 
-    .contact-grid{
+    .contact-grid {
 
-        grid-template-columns: repeat(3,1fr);
+    display: grid;
 
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 22px;
+
+    width: 100%;
+
+    margin-top: 42px;
     }
 
 }
@@ -1253,9 +1265,8 @@ h1 {
 
 .contact-icon svg {
 
-    width: 48px;
-
-    height: 48px;
+    width: 34px;
+    height: 34px;
 
     stroke: #c084fc;
 
