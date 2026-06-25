@@ -645,13 +645,17 @@ h1 {
     overflow-x: auto;
     overflow-y: visible;
 
-    padding: 20px;
-
     scrollbar-width: none;
 }
 
 .experience-scroll::-webkit-scrollbar {
   display: none;
+}
+
+/* Scroll spacer */
+
+.scroll-spacer {
+    flex: 0 0 60px;
 }
 
 /* Experience cards */
