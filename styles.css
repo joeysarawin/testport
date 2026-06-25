@@ -221,8 +221,11 @@ a {
   background:
     linear-gradient(
       90deg,
-      rgba(255,255,255,0),
-      rgba(255,230,180,1)
+      rgba(255,255,255,1) 0%,
+      rgba(255,240,210,.95) 12%,
+      rgba(255,220,150,.55) 45%,
+      rgba(255,220,150,.18) 75%,
+      transparent 100%
     );
 
   filter:
@@ -232,10 +235,10 @@ a {
     );
 
   transform:
-    rotate(25deg);
+        rotate(-25deg);
 
-  animation:
-    shootingStar linear infinite;
+    animation:
+        shootingStar linear infinite;
 }
 
 /* Planet */
@@ -293,36 +296,6 @@ a {
   }
 }
 
-/* Shooting star animation */
-
-@keyframes shootingStar {
-
-  0% {
-    transform:
-      translateX(0)
-      translateY(0)
-      rotate(25deg);
-
-    opacity: 0;
-  }
-
-  8% {
-    opacity: 1;
-  }
-
-  30% {
-    opacity: 1;
-  }
-
-  100% {
-    transform:
-      translateX(1200px)
-      translateY(420px)
-      rotate(25deg);
-
-    opacity: 0;
-  }
-}
 /* Main */
 
 main {
@@ -825,8 +798,7 @@ h1 {
 
   0% {
     transform:
-      translateX(0)
-      translateY(0)
+      translate3d(0,0,0)
       rotate(-25deg);
 
     opacity: 0;
@@ -842,8 +814,7 @@ h1 {
 
   100% {
     transform:
-      translateX(-1200px)
-      translateY(420px)
+      translate3d(-1200px,420px,0)
       rotate(-25deg);
 
     opacity: 0;
