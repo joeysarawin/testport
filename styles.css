@@ -576,11 +576,11 @@ h1 {
   width:
     min(100% - 48px, 1400px);
 
-  margin:
-    0 auto;
+  margin: 0 auto;
 
-  padding:
-    40px 0 140px;
+  padding: 60px 30px 160px;
+
+  overflow: visible;
 }
 
 /* Section title */
@@ -639,17 +639,16 @@ h1 {
 /* Horizontal scroll */
 
 .experience-scroll {
-  display: flex;
+    display: flex;
 
-  gap: 22px;
+    gap: 22px;
 
-  overflow-x: auto;
-  overflow-y: visible;
+    overflow-x: auto;
+    overflow-y: visible;
 
-  padding-top: 14px;
-  padding-bottom: 18px;
+    padding: 20px;
 
-  scrollbar-width: none;
+    scrollbar-width: none;
 }
 
 .experience-scroll::-webkit-scrollbar {
@@ -698,7 +697,7 @@ padding: 42px;
 /* Exp card hover effect */
 
 .experience-card:hover {
-    transform: translateY(-12px) scale(1.02);
+    transform: translateY(-8px) scale(1.015);
 
     border-color: rgba(255,210,120,0.28);
 
