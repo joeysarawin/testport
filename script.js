@@ -42,34 +42,40 @@ for (let i = 0; i < totalStars; i++) {
 
   starsContainer.appendChild(star);
 }
-
 /* Shooting stars */
 
-for (let i = 0; i < 6; i++) {
+function createShootingStar() {
 
   const shootingStar =
     document.createElement("div");
 
-  shootingStar.classList.add(
-    "shooting-star"
-  );
+  shootingStar.classList.add("shooting-star");
 
+  // Spawn from the right side
+  shootingStar.style.left =
+    `${80 + Math.random() * 20}%`;
+
+  // Random height
   shootingStar.style.top =
     `${Math.random() * 60}%`;
 
-  shootingStar.style.left =
-    `${Math.random() * 20}%`;
-
+  // Random speed
   shootingStar.style.animationDuration =
-    `${Math.random() * 4 + 4}s`;
+    `${4 + Math.random() * 3}s`;
 
-  shootingStar.style.animationDelay =
-    `${Math.random() * 8}s`;
+  starsContainer.appendChild(shootingStar);
 
-  starsContainer.appendChild(
-    shootingStar
-  );
+  // Remove after animation
+  setTimeout(() => {
+    shootingStar.remove();
+  }, 7000);
 }
+
+// Create one immediately
+createShootingStar();
+
+// Create a new one every 3 seconds
+setInterval(createShootingStar, 3000);
 
 /* Active navbar section */
 
