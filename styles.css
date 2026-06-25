@@ -559,6 +559,8 @@ h1 {
 
 .experience-heading {
   margin-bottom: 42px;
+
+  padding-left: 80px;
 }
 
 .experience-heading h2 {
@@ -583,6 +585,8 @@ h1 {
   gap: 18px;
 
   margin-bottom: 26px;
+
+  padding-left: 80px;
 }
 
 .category-line {
