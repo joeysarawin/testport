@@ -87,35 +87,29 @@ const navLinks =
 
 window.addEventListener("scroll", () => {
 
-  let current = "";
+    const scrollPosition = window.scrollY + window.innerHeight / 2;
 
-  sections.forEach(section => {
+    let current = "";
 
-    const sectionTop =
-      section.offsetTop;
+    sections.forEach(section => {
 
-    if (
-      window.scrollY >=
-      sectionTop - 160
-    ) {
-      current =
-        section.getAttribute("id");
-    }
+        const top = section.offsetTop;
+        const bottom = top + section.offsetHeight;
 
-  });
+        if (scrollPosition >= top && scrollPosition < bottom) {
+            current = section.id;
+        }
 
-  navLinks.forEach(link => {
+    });
 
-    link.classList.remove("active");
+    navLinks.forEach(link => {
 
-    if (
-      link.getAttribute("href") ===
-      `#${current}`
-    ) {
-      link.classList.add("active");
-    }
+        link.classList.toggle(
+            "active",
+            link.getAttribute("href") === `#${current}`
+        );
 
-  });
+    });
 
 });
 
