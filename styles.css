@@ -403,6 +403,17 @@ main {
 
   width:
     min(100% - 48px, 1400px);
+  #contact .experience-heading{
+
+    padding-left:80px;
+
+}
+
+#contact .hero-text{
+
+    max-width:650px;
+
+}
 
   min-height: 100svh;
 
@@ -567,6 +578,8 @@ h1 {
     margin-bottom: 42px;
 
     max-width: none;
+
+    box-sizing: border-box;
 }
 
 .experience-heading h2 {
@@ -1092,7 +1105,7 @@ h1 {
 
     margin-left:calc(50% - 50vw);
 
-    padding:20px 80px;
+    padding:20px 80px 20px 80px;
 
     margin-top:42px;
 
