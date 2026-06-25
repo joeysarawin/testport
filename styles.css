@@ -1203,3 +1203,164 @@ h1 {
     opacity: 0;
   }
 }
+
+/* Contact */
+
+.contact-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 22px;
+
+    margin-top: 24px;
+
+}
+
+.contact-card {
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    min-height: 320px;
+
+    padding: 40px 24px;
+
+    border-radius: 28px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(22,12,40,0.92),
+            rgba(10,4,22,0.82)
+        );
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    color: white;
+
+    transition:
+        transform 300ms cubic-bezier(.22,.61,.36,1),
+        border-color 300ms ease,
+        background 300ms ease;
+
+    overflow: hidden;
+
+}
+
+.contact-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color:
+        rgba(255,210,120,0.25);
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(28,16,52,0.95),
+            rgba(12,6,28,0.88)
+        );
+
+}
+
+.contact-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(255,210,120,0.12),
+            transparent 34%
+        ),
+
+        radial-gradient(
+            circle at bottom left,
+            rgba(168,85,247,0.18),
+            transparent 42%
+        );
+
+    pointer-events: none;
+
+}
+
+.contact-icon {
+
+    width: 88px;
+    height: 88px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 30px;
+
+    border-radius: 50%;
+
+    font-size: 2rem;
+
+    color: #c084fc;
+
+    border:
+        2px solid rgba(192,132,252,.65);
+
+}
+
+.contact-card h3 {
+
+    margin: 0;
+
+    font-size: 1.2rem;
+
+    line-height: 1.4;
+
+    word-break: break-word;
+
+}
+
+@media (max-width:1400px){
+
+    .contact-grid{
+
+        grid-template-columns: repeat(3,1fr);
+
+    }
+
+}
+
+@media (max-width:900px){
+
+    .contact-grid{
+
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:640px){
+
+    .contact-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
