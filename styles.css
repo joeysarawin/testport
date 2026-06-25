@@ -1084,9 +1084,9 @@ h1 {
 
     display: grid;
 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, minmax(280px,1fr));
 
-    gap: 32px;
+    gap: 28px;
 
     margin-top: 48px;
 
