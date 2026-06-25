@@ -648,8 +648,11 @@ h1 {
     scrollbar-width: none;
 }
 
-.experience-scroll::-webkit-scrollbar {
-  display: none;
+.experience-scroll::before,
+.experience-scroll::after {
+    content: "";
+
+    flex: 0 0 40px;
 }
 
 /* Scroll spacer */
