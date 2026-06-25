@@ -1084,14 +1084,13 @@ h1 {
 
     display: grid;
 
-    grid-template-columns: repeat(5, minmax(250px,1fr));
+    grid-template-columns: repeat(4, 1fr);
 
-    gap: 28px;
+    gap: 32px;
 
-    margin-top: 40px;
+    margin-top: 48px;
 
 }
-
 .contact-card {
 
     position: relative;
@@ -1108,7 +1107,7 @@ h1 {
 
     min-height: 420px;
 
-    padding: 55px 32px;
+    padding: 55px 40px;
 
     border-radius: 28px;
 
@@ -1203,15 +1202,15 @@ h1 {
 
     margin: 0;
 
-    font-size: 1.55rem;
+    font-size: 1.4rem;
 
-    line-height: 1.45;
+    line-height: 1.35;
 
     font-weight: 700;
 
-    word-break: break-word;
-}
+    overflow-wrap: anywhere;
 
+}
 .contact-card .card-label {
 
     font-size: .9rem;
