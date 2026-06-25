@@ -577,7 +577,7 @@ h1 {
 
   margin: 0 auto;
 
-  padding: 60px 30px 160px;
+  padding: 60px 0 160px;
 
   overflow: visible;
 }
@@ -645,14 +645,19 @@ h1 {
     overflow-x: auto;
     overflow-y: visible;
 
+    width: 100vw;
+
+    margin-left: calc(50% - 50vw);
+
+    padding: 20px 80px;
+
     scrollbar-width: none;
+
+    scroll-padding-inline: 80px;
 }
 
-.experience-scroll::before,
-.experience-scroll::after {
-    content: "";
-
-    flex: 0 0 40px;
+.experience-scroll::-webkit-scrollbar {
+    display: none;
 }
 
 /* Scroll spacer */
@@ -666,12 +671,11 @@ h1 {
 .experience-card {
   position: relative;
 
-  flex:
-  0 0 430px;
+  flex: 0 0 390px;
 
-min-height: 320px;
+  min-height: 320px;
 
-padding: 42px;
+  padding: 42px;
 
   border-radius: 28px;
 
